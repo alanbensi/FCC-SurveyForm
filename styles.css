@@ -41,7 +41,61 @@ body::before {
     width: 40%;
     margin: auto;
     padding: 2.5rem;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 2rem;
 }
 
+.containerFormFields {
+    display: flex;
+    flex-direction: column;
+}
+
+.labelForm, .containerFormFieldsText {
+    color: white;
+    font-size: 20px;
+    margin: 1.1rem 0 0.5rem 0;
+}
+
+.inputForm, .selectForm {
+    padding: 0.6rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.inputForm::placeholder, .selectForm {
+    font-size: 16px;
+}
+
+.inputForm:focus, .selectForm:focus, .textareaForm:focus {
+    outline: none;
+    border: #194779 solid 4px;
+    font-size: 16px;
+}
+
+.inputRadio, .checkbox {
+    margin-right: 0.8rem;
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.textareaForm {
+    resize: vertical;
+    height: 7rem;
+    border-radius: 5px;
+}
+
+.textareaForm::placeholder {
+    font-size: 17px;
+}
+
+#submit {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.6rem;
+    background-color: #37AF65;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
